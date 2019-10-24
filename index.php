@@ -48,7 +48,7 @@ function sc(&$la, &$lb) {
    }
 }
 
-// function pa($lb, $la) {
+function pa($lb, $la) {
 
-//    if(isset($lb[]))
-// }
+   if(isset($lb[]))
+}
