@@ -13,6 +13,19 @@ class liste extends push_swap{
       //$this->lb = [22, 33, 44];
       
       $new_la = array_shift($this->la);
+      
+      //print_r($this->la);
+      //$this->la = sa($this->la); 
+      // $lb = sb($lb);
+      //sc($this->la, $lb); //on utilise soit sa(), sb() ou sc(), ainsi on les mettre en parametre selon nos essaie.
+      // pa($this->la, $lb);
+      // pb($this->la, $lb);
+      // ra($this->la);
+      //rb($lb);
+      //rr($this->la, $lb);
+      //rra($this->la);
+      //rrb($lb);
+      //rrr($this->la, $lb);
    }
    
    public function algorithme()
