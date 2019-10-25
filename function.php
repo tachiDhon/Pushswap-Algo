@@ -52,7 +52,7 @@ class push_swap{
          array_unshift($lb, $first);
          array_push($this->array_procedure, "pb");
          // print_r($la);
-         // print_r($lb);
+         //print_r($lb);
       }
    }
    
@@ -69,7 +69,7 @@ class push_swap{
       array_push($lb, $third);
       array_push($this->array_procedure, "rb");
       
-      // print_r($lb);
+      //print_r($lb);
       return $lb;
    }
    
@@ -92,7 +92,7 @@ class push_swap{
       array_unshift($lb, $fifth);
       array_push($this->array_procedure, "rrb");
       
-      // print_r($lb);
+      //print_r($lb);
    }
    
    public function rrr(&$la, &$lb) {

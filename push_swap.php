@@ -4,19 +4,34 @@ require_once "function.php";
 
 class liste extends push_swap{
 
-   protected $la;
-   protected $lb = [];
+   protected $la = [];
+   protected $lb = []; 
+   public $a;
+   public $count;
 
-   public function list_Swap($a, $count) {
-      
+   public function __construct($a, $count) {
+
       $this->la = $a;
-      //$this->lb = [22, 33, 44];
-      
       $new_la = array_shift($this->la);
+      $sorted = ($this->la);
+      
+      sort($sorted);
+      //print_r($sorted);
+      //echo $count;
+      if ($count < 3 || $this->la === $sorted) {
+         // echo "test";
+         exit(0);
+      } else {
+         $this->la = $a;
+         $new_la = array_shift($this->la);
+         // print_r($this->la);
+         //$this->lb = [22, 33, 44];
+      }
    }
    
    public function algorithme()
    {
+      if (!empty($this->la))
       $min = min($this->la);
       while(!empty($this->la)){
          for ($i=0; $i < count($this->la); $i++) { 
@@ -39,6 +54,7 @@ class liste extends push_swap{
       echo $real_string . PHP_EOL;
    }
 }
-$object = new liste;
-$object->list_swap($argv, $argc);
+  
+
+$object = new liste($argv, $argc);
 $object->algorithme();
