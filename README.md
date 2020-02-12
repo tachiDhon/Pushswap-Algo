@@ -37,6 +37,7 @@ Notions d'algorithmes en PHP
    11  "rrr" :  "rra"  et  "rrb"  en même temps.
    
    =>Votre programme doit ressembler à l’exemple ci-dessous SUR TERMINAL:
+   ```bash
    ∼/W-ALG-502> php push_swap.php 2 1 3 6 5 7 | cat -e 
    ra pb ra ra ra ra pb pb ra pb ra pb pb pa pa pa pa pa pa$
    ∼/W-ALG-502> php push_swap.php 73 79 83 89 97 | cat -e
@@ -44,4 +45,5 @@ Notions d'algorithmes en PHP
    ∼/W-ALG-502> php push_swap.php 1789 | cat -e
    $
    ∼/W-ALG-502>
+   ```
      
